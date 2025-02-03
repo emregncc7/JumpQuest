@@ -1,97 +1,111 @@
-# 🎮 Platform Game
+# 🎮 JumpQuest - Platform Game
 
 A multi-level platform game built with JavaScript and HTML5 Canvas.
 
-## 👥 Contributors
+## 🚀 Play Now!
+Play the game online: [JumpQuest Game](https://jump-quest.vercel.app/)
 
-- 👨‍💻 **Emre Genç** - *Developer* - [emregncc7](https://github.com/emregncc7)
+## 🕹️ How to Play
+- Arrow Keys or WASD to move
+- Left/Right Arrow (or A/D): Move left/right
+- Up Arrow (or W/Space): Jump
+- Collect points by reaching platforms
+- Avoid falling off
+- Reach the highest score!
+
+## 🛠️ Local Development
+Run the game locally with these steps:
+
+1. Clone the repository:
+```bash
+git clone https://github.com/emregncc7/JumpQuest.git
+```
+
+2. Install dependencies:
+```bash
+cd JumpQuest
+yarn install
+```
+
+3. Start the development server:
+```bash
+yarn dev
+```
+
+4. Open `http://localhost:9000` in your browser
+
+## 🔧 Built With
+- JavaScript
+- HTML5 Canvas
+- Webpack
+- CSS
+
+## 👥 Contributors
+- 👨‍💻 Emre Genç - Developer - [GitHub](https://github.com/emregncc7)
 
 ## ✨ Features
-
 - 🏃‍♂️ 4 unique levels with different platform layouts
-- 🎯 Smooth character animations
+- 🎯 Smooth animations
 - 🌍 Multi-language support (English, Turkish, Russian)
 - 🎉 Confetti effect on game completion
 - 🎮 Responsive controls
-- 💫 Collision detection
+- 💫 Accurate collision detection
 - 🌄 Parallax scrolling backgrounds
 
 ## 🕹️ Controls
-
-- **A** - ⬅️ Move Left
-- **D** - ➡️ Move Right
-- **W** or **SPACE** - ⬆️ Jump
-- **SPACE** - 🎯 Start game / Continue to next level
+- A / Left Arrow - ⬅️ Move Left
+- D / Right Arrow - ➡️ Move Right
+- W / Up Arrow / SPACE - ⬆️ Jump
+- SPACE - 🎯 Start game / Next level
 
 ## 🎯 Game Mechanics
+- 🚪 Reach the door to complete each level
+- ⚠️ Falling off resets progress to level 1
+- 🎨 Unique platform layouts in every level
+- 🎊 Celebration screen with confetti after level 4
 
-- 🚪 Complete each level by reaching the door at the end
-- ⚠️ Falling off platforms will restart you from level 1
-- 🎨 Each level has unique platform layouts and challenges
-- 🎊 After completing all 4 levels, you'll see a celebration screen with confetti
+## 🌐 Language Support
+You can switch between languages from the main menu:
 
-## 🌐 Languages
-
-The game supports three languages:
 - 🇬🇧 English (Default)
 - 🇹🇷 Turkish
 - 🇷🇺 Russian
 
-You can change the language by clicking on the corresponding flag in the main menu.
-
 ## 🎨 Level Design
-
-- 🎯 **Level 1**: Introduction level with basic platforming
-- 🏃 **Level 2**: Introduces varying platform heights
-- 🦘 **Level 3**: More challenging jumps with small platforms
-- 🎭 **Level 4**: Final level with complex platform arrangements
+- 🎯 Level 1: Intro level with basic platforming
+- 🏃 Level 2: Introduces varying platform heights
+- 🦘 Level 3: Requires precise jumping on small platforms
+- 🎭 Level 4: Final challenge with complex platforming
 
 ## 💻 Technical Details
-
 - ⚡ Built with vanilla JavaScript
-- 🎨 Uses HTML5 Canvas for rendering
-- 📦 No external libraries or frameworks
-- 🎬 Asset-based animations and sprites
+- 🎨 HTML5 Canvas for rendering
+- 📦 No external libraries required
+- 🎬 Sprite-based animations
 - 🔧 Modular code structure
 
-## 🚀 Installation
-
-1. Clone the repository:
-```bash
-git clone [repository-url]
+## 📁 Project Structure
 ```
-
-2. Navigate to the project directory:
-```bash
-cd platform-game
-```
-
-3. Open `index.html` in your web browser to start playing
-
-## 👨‍💻 Development
-
-The project structure is organized as follows:
-
-```
-platform-game/
+JumpQuest/
 ├── src/
 │   ├── js/
-│   │   └── canvas.js
-│   ├── css/
+│   │   ├── game.js
+│   │   ├── player.js
+│   │   └── physics.js
+│   ├── assets/
+│   │   ├── images/
+│   │   │   ├── platform.png
+│   │   │   ├── background.png
+│   │   ├── sounds/
+│   ├── styles/
 │   │   └── style.css
-│   ├── img/
-│   │   ├── platform.png
-│   │   ├── background.png
-│   │   └── ...
-│   └── index.html
+│   ├── index.html
 └── README.md
 ```
 
 ## 🙏 Credits
-
-- 🎨 Game assets and sprites created for this project
-- 🎵 Background music and sound effects (if applicable)
+- 🎨 Custom-designed game assets
+- 🎵 Sound effects & music (if applicable)
 
 ## 📝 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License. See the LICENSE file for details.
