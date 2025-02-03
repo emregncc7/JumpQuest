@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #333;
+}
+
+#ui-overlay {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+}
+
+#ui-overlay > div {
+    margin-bottom: 10px;
+}
+
+.confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    opacity: 0;
+    transform: translateY(0);
+    animation: confetti-fall 2s linear;
+}
+
+@keyframes confetti-fall {
+    0% {
+        opacity: 1;
+        transform: translateY(0) rotate(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(300px) rotate(720deg);
+    }
+}
+
+/* Mobil cihazlar için yatay mod uyarısı */
+#orientation-warning {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Dikey modda uyarıyı göster */
+@media screen and (orientation: portrait) and (max-width: 768px) {
+    #orientation-warning {
+        display: flex;
+    }
+}
+
+/* Tablet ve büyük ekranlar için ayarlar */
+@media screen and (min-width: 768px) {
+    #game-container {
+        width: 90%;
+        height: 90vh;
+    }
+}
+
+/* Küçük ekranlar için ayarlar */
+@media screen and (max-width: 767px) {
+    #game-container {
+        width: 100%;
+        height: 100vh;
+    }
+}
+
+/* Çok geniş ekranlar için maksimum boyut */
+@media screen and (min-width: 1440px) {
+    #game-container {
+        max-width: 1280px;
+        max-height: 720px;
+    }
+} 

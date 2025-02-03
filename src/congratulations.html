@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tebrikler!</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #222;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .confetti {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: red;
+            opacity: 0;
+            transform: translateY(0);
+            animation: confetti-fall 2s linear infinite;
+        }
+
+        @keyframes confetti-fall {
+            0% {
+                opacity: 1;
+                transform: translateY(0) rotate(0);
+            }
+            100% {
+                opacity: 0;
+                transform: translateY(300px) rotate(720deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Tebrikler!</h1>
+    <p>Tüm levelleri başarıyla tamamladınız!</p>
+    <button onclick="window.location.href='index.html'">Tekrar Oyna</button>
+
+    <script>
+        function createConfetti() {
+            for (let i = 0; i < 50; i++) {
+                let confetti = document.createElement("div");
+                confetti.classList.add("confetti");
+                document.body.appendChild(confetti);
+
+                let colors = ["#ff0", "#f00", "#0f0", "#00f", "#f0f", "#0ff", "#ffa500"];
+                let size = Math.random() * 10 + 5;
+                
+                confetti.style.width = `${size}px`;
+                confetti.style.height = `${size}px`;
+                confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                confetti.style.left = `${Math.random() * window.innerWidth}px`;
+                confetti.style.top = `${Math.random() * window.innerHeight / 2}px`;
+                confetti.style.animationDuration = `${Math.random() * 2 + 1}s`;
+
+                setTimeout(() => {
+                    confetti.remove();
+                }, 2000);
+            }
+        }
+
+        // Sayfa yüklendiğinde ve her 2 saniyede bir konfeti efekti
+        window.onload = function() {
+            createConfetti();
+            setInterval(createConfetti, 2000);
+        };
+    </script>
+</body>
+</html> 
