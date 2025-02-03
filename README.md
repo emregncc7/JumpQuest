@@ -40,8 +40,8 @@ yarn dev
 - Webpack
 - CSS
 
-## 👥 Contributors
-- 👨‍💻 Emre Genç - Developer - [GitHub](https://github.com/emregncc7)
+## 👥 Developer
+- 👨‍💻 Emre Genç -  - LinkedIn: [https://linkedin.com/emregncc7](https://www.linkedin.com/in/emregenc7/)
 
 ## ✨ Features
 - 🏃‍♂️ 4 unique levels with different platform layouts
