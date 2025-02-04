@@ -41,7 +41,7 @@ yarn dev
 - CSS
 
 ## 👥 Developer
-- 👨‍💻 Emre Genç -  - LinkedIn: [https://linkedin.com/emregncc7](https://www.linkedin.com/in/emregenc7/)
+- 👨‍💻 Emre Genç - - LinkedIn: [https://linkedin.com/emregncc7](https://www.linkedin.com/in/emregenc7/)
 
 ## ✨ Features
 - 🏃‍♂️ 4 unique levels with different platform layouts
